@@ -18,3 +18,6 @@ function contrib_custom_plugins_all_plugins( $plugins ) {
 	$custom = get_plugins( $prefix . 'custom' );
 	return array_merge( $plugins, $contrib, $custom );
 }
+
+register_theme_directory( 'contrib' );
+register_theme_directory( 'custom' );
